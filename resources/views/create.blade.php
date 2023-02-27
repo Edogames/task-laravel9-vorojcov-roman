@@ -8,7 +8,7 @@
         <div class="form-group">
             <div class="d-flex">
                 <label>For the user: </label>
-                <select name="targetuser" style="width: fit-content" class="form-control">
+                <select name="targetuser" style="width: fit-content" required class="form-control">
                     @foreach ($users as $user)
                         <option value="{{ $user->id }}">{{ $user->name }}</option>
                     @endforeach
@@ -17,7 +17,7 @@
             <br>
             <div class="d-flex">
                 <label>By user: </label>
-                <select name="fromuser" style="width: fit-content" class="form-control">
+                <select name="fromuser" style="width: fit-content" required class="form-control">
                     @foreach ($users as $user)
                         <option value="{{ $user->id }}">{{ $user->name }}</option>
                     @endforeach
@@ -25,7 +25,7 @@
             </div>
         </div>
         <label>Content</label>
-        <textarea name="content" class="form-control" cols="30" rows="10" placeholder=""></textarea>
+        <textarea name="content" class="form-control" cols="30" rows="10" required placeholder=""></textarea>
         <br>
         <button type="submit" style="margin: auto; display: block" class="btn btn-success">Create</button>
         <br>
