@@ -1,28 +1,66 @@
-<h1>A task created for job applying in "ИП Ворожцов Роман Геннадьевич" on Laravel 9.</h1>
-<h2>Project description</h2>
-<p>
-So, here we have a task project created for company "ИП Ворожцов Роман Геннадьевич", so they can test my knowledge in web programming.
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-<h2>Developer notes</h2>
-<p>
-<ul>
-<li>I am bad at authentication, like, a lot, but I am good at handling back-end on getting, editing, creating and deleting data. Also, in task it's included to create php artisan command (or smth like that) to autenticate through command like, which I have heard just now about, and couldn't find any info about it.</li>
-<li>I should've create this readme right after I've started, but I've got into coding so much, that I forgot to do it 😅</li>
-<li>I should've created some tests buuuuut... there's no need to make some fancy tests, because php (which is being used mainly in Laravel) is a back-end server-side rendering languge, which means that user can't change properties of inputs and etc. and if user does, then he'll get errors and would not be able to create todos.</li>
-<li>Task don't have information about what I had to create, so I've created a simple todo list where you select users from selections and assign them a task, which status, by default, is "in progress".</li>
-<li>Editing of the task is made right on that exact task after you click "Edit" button, which activated something I call "edit view" and disables what I call "normal view". After you click on another "Edit" button: other edits will be closed.</li>
-</ul>
-</p>
-<h2>How it's intended to start</h2>
-<p>
-So, as I've created this project on Windows 11, I've tested everything through XAMPP, so, to start, make sure you have composer, to install requirements with command <code>composer install</code> inside root directory of the project. Now, through XAMPP, click on "Config" button in apache server line and select "httpd.conf" from context menu.
-<br>
-<br>
-Now, after you activate/restart XAMPP server with MySQL, click on "Admin" in MySQL line, and create database called "task" (or however the <code>DB_DATABASE</code> value is in <code>.env</code> file).
-<br>
-<br>
-After creating database, open terminal, gitbash, powershell, etc. in root directory, run commands <code>php artisan optimize:clear</code>, which'll clear chache and <code>php artisan migrate:fresh --seed</code>, so you'll have placeholder data in your database.
-<br>
-<br>
-Now you can freely open <code>127.0.0.1</code> in your web browser and start using the website! Create, edit and delete whatever you want! If you are an enthusiast, who wants to use somethin simple llike this one, then feel free to use it, just note who is the real coder of this todo 😉
-</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
